@@ -68,3 +68,7 @@ logging setup --level INFO
 // script --file bim.roo
 quit
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-06-18 01:11:22
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-06-18 01:26:27
+security setup
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-06-18 01:26:51
