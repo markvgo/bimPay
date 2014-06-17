@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<link href="http://localhost:8080/" rel="selenium.base"/>
+<title>Selenium test for WorkDoneController</title>
+</head>
+<body>
+    <table border="1" cellpadding="1" cellspacing="1">
+        <thead>
+            <tr>
+                <td colspan="3" rowspan="1">Selenium test for WorkDoneController</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+                    <td>open</td>
+                    <td>http://localhost:8080/pay/workdones?form&amp;lang=en_US</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_description_id</td>
+                    <td>someDescription1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_startDate_id</td>
+                    <td>May 16, 2013</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_endDate_id</td>
+                    <td>May 16, 2013</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_rate_id</td>
+                    <td>1.0</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_quantity_id</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>clickAndWait</td>
+                    <td>//input[@id = 'proceed']</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_au_com_bim_pay_domain_WorkDone_description_description_id</td>
+                    <td>someDescription1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_au_com_bim_pay_domain_WorkDone_startDate_startDate_id</td>
+                    <td>May 16, 2013</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_au_com_bim_pay_domain_WorkDone_endDate_endDate_id</td>
+                    <td>May 16, 2013</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_au_com_bim_pay_domain_WorkDone_rate_rate_id</td>
+                    <td>1.0</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_au_com_bim_pay_domain_WorkDone_quantity_quantity_id</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+    </table>
+</body>
+</html>

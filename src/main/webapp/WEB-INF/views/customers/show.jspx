@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_au_com_bim_pay_domain_Customer" object="${customer}" path="/customers" z="Lbwbr8ax1Btu1iAbvJm2KBl6ppQ=">
+        <field:display field="firstName" id="s_au_com_bim_pay_domain_Customer_firstName" object="${customer}" z="5Opt3C2EVusKrr92L1zYQArA+oM="/>
+        <field:display field="lastName" id="s_au_com_bim_pay_domain_Customer_lastName" object="${customer}" z="iZ/MwfiuZ1dWrvQxZtgKDbkx5v8="/>
+        <field:display field="address" id="s_au_com_bim_pay_domain_Customer_address" object="${customer}" z="E77atokSYiybFO9c9ktr40dcnjQ="/>
+        <field:display field="city" id="s_au_com_bim_pay_domain_Customer_city" object="${customer}" z="lxn9gFfuwsH3I1K1FiiM2wpPRHA="/>
+        <field:display field="province" id="s_au_com_bim_pay_domain_Customer_province" object="${customer}" z="OOlG+FpEwE7U0yfye0T4/mmVu/M="/>
+        <field:display field="postcode" id="s_au_com_bim_pay_domain_Customer_postcode" object="${customer}" z="/hfbh8+KLbekM2B2oCRxs8qO/pw="/>
+        <field:display field="phone" id="s_au_com_bim_pay_domain_Customer_phone" object="${customer}" z="NEncQCiTqg8d1CCAse9fd3Zdn/s="/>
+        <field:display field="mobile" id="s_au_com_bim_pay_domain_Customer_mobile" object="${customer}" z="Xjan68/afDXKw9vKDK6sHsq7Lc8="/>
+        <field:display field="email" id="s_au_com_bim_pay_domain_Customer_email" object="${customer}" z="IdMqNYsaoZKk8bQg4CPj7JdzZ+E="/>
+        <field:display date="true" dateTimePattern="${customer_birthday_date_format}" field="birthDay" id="s_au_com_bim_pay_domain_Customer_birthDay" object="${customer}" z="zbDtpobLypStV8M0LaIn8il/Qfk="/>
+    </page:show>
+</div>

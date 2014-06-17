@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_au_com_bim_pay_domain_WorkDone" modelAttribute="workDone" path="/workdones" versionField="Version" z="gsfLjGEfQ9xUYsp1oQZixkpUsik=">
+        <field:textarea field="description" id="c_au_com_bim_pay_domain_WorkDone_description" z="mtgjBukmDYzqUb5XahesLqGVjHk="/>
+        <field:datetime dateTimePattern="${workDone_startdate_date_format}" field="startDate" id="c_au_com_bim_pay_domain_WorkDone_startDate" past="true" required="true" z="/WNr31MM+UplTurcwGDmbnLlpEU="/>
+        <field:datetime dateTimePattern="${workDone_enddate_date_format}" field="endDate" id="c_au_com_bim_pay_domain_WorkDone_endDate" past="true" required="true" z="wU5huQrXo5F2EpstJCPtUkaydWQ="/>
+        <field:input field="rate" id="c_au_com_bim_pay_domain_WorkDone_rate" required="true" z="bf58T4vpCX24DDyGLPmSTRGnDUQ="/>
+        <field:input field="quantity" id="c_au_com_bim_pay_domain_WorkDone_quantity" required="true" z="fU/H87bJ8y78vavFN73kuVr9tTo="/>
+        <field:select field="worktype" id="c_au_com_bim_pay_domain_WorkDone_worktype" itemValue="id" items="${worktypes}" path="/worktypes" required="true" z="nf8e7bcV5FGdnBvjzt9m2daTfYI="/>
+        <field:select field="customer" id="c_au_com_bim_pay_domain_WorkDone_customer" itemValue="id" items="${customers}" path="/customers" required="true" z="TwZl9Ec6s8x0JOG/CHj8vYsVSDc="/>
+        <field:select field="employee" id="c_au_com_bim_pay_domain_WorkDone_employee" itemValue="id" items="${employees}" path="/employees" required="true" z="juzArXX5L1NMuoyoXNTdgEhLZw4="/>
+    </form:update>
+</div>

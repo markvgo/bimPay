@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_au_com_bim_pay_domain_WorkDone" items="${workdones}" z="AomcK2sBGbfNTC/IsluOOEdsCmQ=">
+        <table:table data="${workdones}" id="l_au_com_bim_pay_domain_WorkDone" path="/workdones" z="Gfag0e9qE5MZ0Jfgr2DMKhFaydM=">
+            <table:column id="c_au_com_bim_pay_domain_WorkDone_description" property="description" z="gnKiHIiS51bvgFDMRYABoK6f98M="/>
+            <table:column date="true" dateTimePattern="${workDone_startdate_date_format}" id="c_au_com_bim_pay_domain_WorkDone_startDate" property="startDate" z="1jCF/JR8c7C0kx4PQdXe3mCL+g8="/>
+            <table:column date="true" dateTimePattern="${workDone_enddate_date_format}" id="c_au_com_bim_pay_domain_WorkDone_endDate" property="endDate" z="vK8LFRL0ASoPif46UHR9vcfrvCE="/>
+            <table:column id="c_au_com_bim_pay_domain_WorkDone_rate" property="rate" z="he4ArxXTstEs6di9iqAzBuxZz2Y="/>
+            <table:column id="c_au_com_bim_pay_domain_WorkDone_quantity" property="quantity" z="gG8lhviJuG+1mNPdvz23/Ewunoc="/>
+            <table:column id="c_au_com_bim_pay_domain_WorkDone_worktype" property="worktype" z="bZZt8K8U1OssYooTglTg3wft/RM="/>
+        </table:table>
+    </page:list>
+</div>

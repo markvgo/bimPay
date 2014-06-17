@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_au_com_bim_pay_domain_Pay" items="${pays}" z="rFVJ+Mipk9qr/Pa8AltMxwqzyp0=">
+        <table:table data="${pays}" id="l_au_com_bim_pay_domain_Pay" path="/pays" z="iPgZSvV870T9TIojorJSgYOY6oQ=">
+            <table:column date="true" dateTimePattern="${pay_startdate_date_format}" id="c_au_com_bim_pay_domain_Pay_startDate" property="startDate" z="gzYax7PiDkzbjm6CkAgMZONxggo="/>
+            <table:column date="true" dateTimePattern="${pay_enddate_date_format}" id="c_au_com_bim_pay_domain_Pay_endDate" property="endDate" z="22d3BpQTlHAcYT2fzKPfsGF/E9M="/>
+            <table:column id="c_au_com_bim_pay_domain_Pay_employee" property="employee" z="lCrSaC/qF7IRA3Viqv0ROn0ewwI="/>
+            <table:column id="c_au_com_bim_pay_domain_Pay_amount" property="amount" z="xIOVS7WV0iJWoWN/fbNydxL7GOs="/>
+        </table:table>
+    </page:list>
+</div>

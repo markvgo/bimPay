@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_au_com_bim_pay_domain_Employee" items="${employees}" z="UAjgBINgKxTrQmU4yy37ifZQJkY=">
+        <table:table data="${employees}" id="l_au_com_bim_pay_domain_Employee" path="/employees" z="Hc11OC4lZ8dG4kRlhbRFReAYTHM=">
+            <table:column id="c_au_com_bim_pay_domain_Employee_firstName" property="firstName" z="3+hDsHo35Y8mdhGvsAiOfSV/jKM="/>
+            <table:column id="c_au_com_bim_pay_domain_Employee_lastName" property="lastName" z="thhPMYry9fasqtih/nBbuY92sBo="/>
+            <table:column id="c_au_com_bim_pay_domain_Employee_address" property="address" z="OGr6GEA+GZki25HEZ+lX3vQxiqE="/>
+            <table:column id="c_au_com_bim_pay_domain_Employee_city" property="city" z="csJWl6c3jhj1wQvO45QqKmMIDmM="/>
+            <table:column id="c_au_com_bim_pay_domain_Employee_province" property="province" z="dYt+EyEdzAXSRbERoK/yiH++51o="/>
+            <table:column id="c_au_com_bim_pay_domain_Employee_postcode" property="postcode" z="DsAekIhnIzAVbRNa7JFVuHyp3No="/>
+        </table:table>
+    </page:list>
+</div>

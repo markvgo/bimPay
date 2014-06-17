@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_au_com_bim_pay_domain_WorkType" items="${worktypes}" z="Mw4Db0n7GEMbY8UnqMyVW7VRA8I=">
+        <table:table data="${worktypes}" id="l_au_com_bim_pay_domain_WorkType" path="/worktypes" z="dxX2c3smVpuD/gbRchmrn8+UTdw=">
+            <table:column id="c_au_com_bim_pay_domain_WorkType_description" property="description" z="2xQUPnNqk2YhJubLzWMNqlPPw8E="/>
+        </table:table>
+    </page:list>
+</div>

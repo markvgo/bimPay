@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_au_com_bim_pay_domain_Job" object="${job}" path="/jobs" z="q9BfbtWwQ2TMU/XRsc2L6dcVxqA=">
+        <field:display field="description" id="s_au_com_bim_pay_domain_Job_description" object="${job}" z="Wt+4wjtAlZKww2gREIugeTzYD7Y="/>
+        <field:display date="true" dateTimePattern="${job_startdate_date_format}" field="startDate" id="s_au_com_bim_pay_domain_Job_startDate" object="${job}" z="/OwWAximhIA9uLL9PeY3S3B19qQ="/>
+        <field:display date="true" dateTimePattern="${job_enddate_date_format}" field="endDate" id="s_au_com_bim_pay_domain_Job_endDate" object="${job}" z="1/7TgOgoBUyXYJxuXlBg8pxv16U="/>
+        <field:display field="customer" id="s_au_com_bim_pay_domain_Job_customer" object="${job}" z="VmC8Hdcb0nT6slvZNUNmou5nu34="/>
+    </page:show>
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_au_com_bim_pay_domain_WorkDone" modelAttribute="workDone" path="/workdones" render="${empty dependencies}" z="aCqRDRl71TYEYhh7k5MYW1+TNIE=">
+        <field:textarea field="description" id="c_au_com_bim_pay_domain_WorkDone_description" z="mtgjBukmDYzqUb5XahesLqGVjHk="/>
+        <field:datetime dateTimePattern="${workDone_startdate_date_format}" field="startDate" id="c_au_com_bim_pay_domain_WorkDone_startDate" past="true" required="true" z="/WNr31MM+UplTurcwGDmbnLlpEU="/>
+        <field:datetime dateTimePattern="${workDone_enddate_date_format}" field="endDate" id="c_au_com_bim_pay_domain_WorkDone_endDate" past="true" required="true" z="wU5huQrXo5F2EpstJCPtUkaydWQ="/>
+        <field:input field="rate" id="c_au_com_bim_pay_domain_WorkDone_rate" required="true" z="bf58T4vpCX24DDyGLPmSTRGnDUQ="/>
+        <field:input field="quantity" id="c_au_com_bim_pay_domain_WorkDone_quantity" required="true" z="fU/H87bJ8y78vavFN73kuVr9tTo="/>
+        <field:select field="worktype" id="c_au_com_bim_pay_domain_WorkDone_worktype" itemValue="id" items="${worktypes}" path="/worktypes" required="true" z="nf8e7bcV5FGdnBvjzt9m2daTfYI="/>
+        <field:select field="customer" id="c_au_com_bim_pay_domain_WorkDone_customer" itemValue="id" items="${customers}" path="/customers" required="true" z="TwZl9Ec6s8x0JOG/CHj8vYsVSDc="/>
+        <field:select field="employee" id="c_au_com_bim_pay_domain_WorkDone_employee" itemValue="id" items="${employees}" path="/employees" required="true" z="juzArXX5L1NMuoyoXNTdgEhLZw4="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_au_com_bim_pay_domain_WorkDone" render="${not empty dependencies}" z="nag7rHCUHKhfx9mfI7nzBUY0Ndw="/>
+</div>

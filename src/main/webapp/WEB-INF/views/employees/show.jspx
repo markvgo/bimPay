@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_au_com_bim_pay_domain_Employee" object="${employee}" path="/employees" z="XgBTdHB0x/JM9kUmiEFBQf1cL8Q=">
+        <field:display field="firstName" id="s_au_com_bim_pay_domain_Employee_firstName" object="${employee}" z="LCyXHQdMEpGafKjRl2ppEaOzb3Y="/>
+        <field:display field="lastName" id="s_au_com_bim_pay_domain_Employee_lastName" object="${employee}" z="gfPYFfCInotvOhUTrOqpE5uRwVM="/>
+        <field:display field="address" id="s_au_com_bim_pay_domain_Employee_address" object="${employee}" z="Vn2uvG377YEQicy3z+y4CSGY5aw="/>
+        <field:display field="city" id="s_au_com_bim_pay_domain_Employee_city" object="${employee}" z="qoZZ0I5DTa/J528rJq2fl2Ona9A="/>
+        <field:display field="province" id="s_au_com_bim_pay_domain_Employee_province" object="${employee}" z="o6m5YcR3Ufk4fixQR+oDewk78aQ="/>
+        <field:display field="postcode" id="s_au_com_bim_pay_domain_Employee_postcode" object="${employee}" z="7QjlQ9CY24L1t4LgcBGgo0NufXo="/>
+        <field:display field="phone" id="s_au_com_bim_pay_domain_Employee_phone" object="${employee}" z="j5Xbt8HpRDeNgtsSr+apRUgDung="/>
+        <field:display field="mobile" id="s_au_com_bim_pay_domain_Employee_mobile" object="${employee}" z="L3dpVp5LwISKGBAmp9mgRFYDtps="/>
+        <field:display field="email" id="s_au_com_bim_pay_domain_Employee_email" object="${employee}" z="amd1UzVFnEMGS3otZe17qDbcyGQ="/>
+        <field:display date="true" dateTimePattern="${employee_birthday_date_format}" field="birthDay" id="s_au_com_bim_pay_domain_Employee_birthDay" object="${employee}" z="ftQFKexFYRnG8C/1zfT1jvMpvzs="/>
+    </page:show>
+</div>

@@ -1,0 +1,77 @@
+// Spring Roo 1.2.6.BUILD-SNAPSHOT [rev 88d88af] log opened at 2014-06-17 08:42:03
+project --topLevelPackage au.com.bim.pay
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+enum type --class ~.reference.Province
+enum constant --name NSW
+enum constant --name WA
+enum constant --name QLD
+enum constant --name VIC
+enum constant --name TAS
+enum constant --name NT
+enum constant --name SA
+enum constant --name ACT
+entity jpa --class ~.domain.AbstractPerson --abstract
+field string --fieldName firstName --sizeMin 3 --sizeMax 30 --class ~.domain.AbstractPerson
+field string --fieldName lastName --notNull --sizeMin 3 --sizeMax 30
+field string --fieldName address --notNull --sizeMax 50 --sizeMin 1
+field string --fieldName city --notNull --sizeMax 30
+field enum --fieldName province --notNull --type ~.reference.Province
+field string --fieldName postcode --notNull --sizeMax 4
+field string --fieldName phone --notNull
+field string --fieldName mobile --notNull
+field string --fieldName email --sizeMax 30 --sizeMin 6
+field date --fieldName birthDay --type java.util.Date --notNull
+entity jpa --class ~.domain.Customer --extends ~.domain.AbstractPerson
+entity jpa --class ~.domain.Job --sequenceName JOB_SEQ
+entity jpa --class ~.domain.Employee --extends ~.domain.AbstractPerson
+field string --fieldName description --sizeMax 60 --class ~.domain.Job
+field date --fieldName startDate --type java.util.Date --notNull --past
+field date --fieldName endDate --type java.util.Date --notNull --past
+field set --fieldName jobs --type ~.domain.Job --mappedBy customer --notNull false --cardinality ONE_TO_MANY --fetch EAGER
+field reference --fieldName customer --class ~.domain.Job --type ~.domain.Customer --notNull
+entity jpa --class ~.domain.WorkType --sequenceName WTYPE_SEQ
+field string --fieldName description --sizeMax 60 --class ~.domain.WorkType
+entity jpa --class ~.domain.WorkDone --sequenceName WORK_SEQ
+field string --fieldName description --sizeMax 60 --class ~.domain.WorkDone
+field date --fieldName startDate --type java.util.Date --notNull --past
+field date --fieldName endDate --type java.util.Date --notNull --past
+field number --fieldName rate --type double --notNull
+field number --fieldName quantity --type int --notNull
+field reference --fieldName worktype --type ~.domain.WorkType --notNull
+field reference --fieldName customer --type ~.domain.Customer --notNull
+field reference --fieldName employee --type ~.domain.Employee --notNull
+field set --fieldName workDone --type ~.domain.WorkDone --mappedBy customer --class ~.domain.Customer --notNull false --cardinality ONE_TO_MANY --fetch EAGER
+field set --fieldName workDone --type ~.domain.WorkDone --mappedBy employee --class ~.domain.Employee --notNull false --cardinality ONE_TO_MANY --fetch EAGER
+entity jpa --class ~.domain.Pay --sequenceName PAY_SEQ
+field date --fieldName startDate --type java.util.Date --notNull --past --class ~.domain.Pay
+field date --fieldName endDate --type java.util.Date --notNull --past
+field reference --fieldName employee --type ~.domain.Employee --notNull
+field number --fieldName amount --type double --notNull
+field set --fieldName pays --type ~.domain.Pay --mappedBy employee --class ~.domain.Employee --notNull false --cardinality ONE_TO_MANY --fetch EAGER
+test integration --entity ~.domain.Customer
+test integration --entity ~.domain.Job
+test integration --entity ~.domain.Employee
+test integration --entity ~.domain.WorkType
+test integration --entity ~.domain.WorkDone
+test integration --entity ~.domain.Pay
+web mvc setup
+web mvc all --package ~.web
+web mvc finder all
+web mvc language --code de
+web mvc language --code es
+selenium test --controller ~.web.CustomerController
+selenium test --controller ~.web.JobController
+selenium test --controller ~.web.EmployeeController
+selenium test --controller ~.web.WorkDoneController
+selenium test --controller ~.web.PayController
+logging setup --level INFO
+// script --file bim.roo
+quit
+// Spring Roo 1.2.6.BUILD-SNAPSHOT [rev 88d88af] log closed at 2014-06-17 08:43:00
+// Spring Roo 1.2.6.BUILD-SNAPSHOT [rev 88d88af] log opened at 2014-06-17 09:03:27
+security setup
+quit
+// Spring Roo 1.2.6.BUILD-SNAPSHOT [rev 88d88af] log closed at 2014-06-17 09:27:28
+// Spring Roo 1.2.6.BUILD-SNAPSHOT [rev 88d88af] log opened at 2014-06-17 09:28:35
+quit
+// Spring Roo 1.2.6.BUILD-SNAPSHOT [rev 88d88af] log closed at 2014-06-17 09:31:52
