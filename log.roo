@@ -1,4 +1,4 @@
-// Spring Roo 1.2.6.BUILD-SNAPSHOT [rev 88d88af] log opened at 2014-06-17 08:42:03
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-06-18 01:10:03
 project --topLevelPackage au.com.bim.pay
 jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
 enum type --class ~.reference.Province
@@ -67,11 +67,4 @@ selenium test --controller ~.web.PayController
 logging setup --level INFO
 // script --file bim.roo
 quit
-// Spring Roo 1.2.6.BUILD-SNAPSHOT [rev 88d88af] log closed at 2014-06-17 08:43:00
-// Spring Roo 1.2.6.BUILD-SNAPSHOT [rev 88d88af] log opened at 2014-06-17 09:03:27
-security setup
-quit
-// Spring Roo 1.2.6.BUILD-SNAPSHOT [rev 88d88af] log closed at 2014-06-17 09:27:28
-// Spring Roo 1.2.6.BUILD-SNAPSHOT [rev 88d88af] log opened at 2014-06-17 09:28:35
-quit
-// Spring Roo 1.2.6.BUILD-SNAPSHOT [rev 88d88af] log closed at 2014-06-17 09:31:52
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-06-18 01:11:22
