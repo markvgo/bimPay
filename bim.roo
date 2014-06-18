@@ -1,6 +1,6 @@
 project --topLevelPackage au.com.bim.pay
 
-jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+jpa setup --provider HIBERNATE --database Postgres
 
 enum type --class ~.reference.Province
 enum constant --name NSW
